@@ -1,12 +1,11 @@
 function windowCallback(newWindow)
 {
     var tabID = newWindow.tabs[0].id;
-    chrome.tabs.executeScript(tabID, {code:"document.documentElement.style.webkitFilter='grayscale(100%)'; document.documentElement.style.zoom=Math.random() * 2 + 0.5;"});
+    chrome.tabs.executeScript(tabID, { file: "newTab.js" });
 };
 		
 chrome.browserAction.onClicked.addListener(function(tab) {
-	chrome.tabs.executeScript(null,
-							  {file:"Godard.js"});
+	chrome.tabs.executeScript(null, {file:"Godard.js"});
 });
 
 chrome.runtime.onMessage.addListener(
