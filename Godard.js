@@ -1,5 +1,5 @@
 document.documentElement.style.webkitFilter = 'grayscale(100%)';
-document.documentElement.style.cursor = "url('http://i.imgur.com/SfxJ4EV.png'), none";
+//document.documentElement.style.cursor = "url('http://i.imgur.com/SfxJ4EV.png'), none";
 
 var links = document.getElementsByTagName("a");
 var linkArray = [];
