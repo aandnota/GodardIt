@@ -2,12 +2,12 @@ function windowCallback(newWindow)
 {
     var tabID = newWindow.tabs[0].id;
     chrome.tabs.executeScript(tabID, { file: "newTab.js" });
-    chrome.tabs.insertCSS(tabID, { code: "* { cursor: url('http://i.imgur.com/SfxJ4EV.png'), auto !important; }" });
+    chrome.tabs.insertCSS(tabID, { code: "* { cursor: url('http://i.imgur.com/rKdkpWu.png'), auto !important; }" });
 };
 		
 chrome.browserAction.onClicked.addListener(function(tab) {
 	chrome.tabs.executeScript(null, {file:"Godard.js"});
-    chrome.tabs.insertCSS(null, { code: "* { cursor: url('http://i.imgur.com/SfxJ4EV.png'), auto !important; }" });
+    chrome.tabs.insertCSS(null, { code: "* { cursor: url('http://i.imgur.com/rKdkpWu.png'), auto !important; }" });
 });
 
 chrome.runtime.onMessage.addListener(
